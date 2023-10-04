@@ -16,7 +16,7 @@ resource "aws_db_parameter_group" "rds_param_group" {
         value = "${var.rds_charset}"
     }
     parameter {
-        name  = "character_set_dados"
+        name  = "character_set_database"
         value = "${var.rds_charset}"
     }
 }

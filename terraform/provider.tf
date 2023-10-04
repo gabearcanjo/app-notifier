@@ -11,17 +11,12 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "tf-notifier-state-v1"
-    key            = "terraform.tfstate"
-    dynamodb_table = "tf-notifier-state-v1"
+    bucket         = "tf-notifier-state-v1-arcanjo"
+    key            = "terraform.tfstate-arcanjo"
+    dynamodb_table = "tf-notifier-state-v1-arcanjo"
     region         = "us-east-1"
   }
 
 }
 
-# provider "aws" {
-#   region                   = "us-east-1"
-#   shared_config_files      = ["./.aws/config"]
-#   shared_credentials_files = ["./.aws/credentials"]
-#   profile                  = "fiap"
-# }
+
